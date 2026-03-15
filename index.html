@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vault Retail Group — Secure storage and retail solutions you can trust." />
+  <title>Vault Retail Group</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="#home" aria-label="Vault Retail Group home">
+      <div class="nav-logo-icon" aria-hidden="true">🔒</div>
+      Vault Retail Group
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#home"      data-section="home"      class="active">Home</a></li>
+      <li><a href="#about"     data-section="about"              >About Us</a></li>
+      <li><a href="#inventory" data-section="inventory"          >Inventory</a></li>
+      <li><a href="#contact"   data-section="contact"            >Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HOME ===================== -->
+  <section id="home" class="site-section" aria-label="Home">
+    <div class="section-inner" style="z-index:1; position:relative;">
+      <div class="hero-badge">Est. 2010 &bull; Trusted Nationwide</div>
+
+      <h1 class="hero-title">
+        Secure Storage &amp;<br><span>Retail Solutions</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Vault Retail Group delivers best-in-class storage units, retail displays,
+        and inventory management solutions — built to protect what matters most.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+        <a href="#contact"   class="btn btn-outline">Get a Quote</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">500+</span>
+          <span class="hero-stat-label">Clients Served</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">15+</span>
+          <span class="hero-stat-label">Years Experience</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">98%</span>
+          <span class="hero-stat-label">Satisfaction Rate</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">50+</span>
+          <span class="hero-stat-label">Product Lines</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 10.94L1.53 4.47l1.06-1.06L8 8.82l5.41-5.41 1.06 1.06z"/></svg>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT US ===================== -->
+  <section id="about" class="site-section" aria-label="About Us">
+    <div class="section-inner">
+      <div class="about-grid">
+
+        <!-- Visual column -->
+        <div class="about-visual reveal">
+          <div class="about-image-block" role="img" aria-label="Vault Retail Group illustration">
+            🏦
+          </div>
+          <div class="about-badge">
+            <span>15+</span>
+            Years in Business
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="reveal">
+          <p class="section-eyebrow">Who We Are</p>
+          <h2 class="section-title">Building Trust Through<br>Secure Solutions</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Since 2010, Vault Retail Group has been the go-to partner for businesses
+            and individuals who demand the very best in storage infrastructure and
+            retail display systems. We combine industrial-grade security with
+            elegant design — because protecting your assets should never mean
+            compromising on appearance.
+          </p>
+
+          <ul class="values-list">
+            <li>
+              <div class="value-icon" aria-hidden="true">🛡️</div>
+              <div class="value-text">
+                <strong>Uncompromising Security</strong>
+                <p>Every product is engineered to exceed industry security standards.</p>
+              </div>
+            </li>
+            <li>
+              <div class="value-icon" aria-hidden="true">⚙️</div>
+              <div class="value-text">
+                <strong>Custom Configurations</strong>
+                <p>Tailored solutions designed to fit your specific space and needs.</p>
+              </div>
+            </li>
+            <li>
+              <div class="value-icon" aria-hidden="true">🤝</div>
+              <div class="value-text">
+                <strong>Dedicated Support</strong>
+                <p>Our team is available around the clock for service and advice.</p>
+              </div>
+            </li>
+            <li>
+              <div class="value-icon" aria-hidden="true">🌱</div>
+              <div class="value-text">
+                <strong>Sustainable Practices</strong>
+                <p>Responsibly sourced materials and eco-friendly manufacturing processes.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INVENTORY ===================== -->
+  <section id="inventory" class="site-section" aria-label="Inventory Available">
+    <div class="section-inner">
+
+      <div class="inventory-header reveal">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Available Inventory</h2>
+        <p class="section-subtitle">
+          From compact personal safes to enterprise-grade vault rooms — browse our
+          current selection and find the right fit for your operation.
+        </p>
+        <div class="divider" style="margin:0 auto 32px;"></div>
+      </div>
+
+      <div class="filter-tabs reveal" role="tablist" aria-label="Filter inventory">
+        <button class="filter-tab active" data-filter="all"     role="tab" aria-selected="true" >All</button>
+        <button class="filter-tab"        data-filter="safe"    role="tab" aria-selected="false">Safes</button>
+        <button class="filter-tab"        data-filter="display" role="tab" aria-selected="false">Display Units</button>
+        <button class="filter-tab"        data-filter="vault"   role="tab" aria-selected="false">Vault Rooms</button>
+        <button class="filter-tab"        data-filter="access"  role="tab" aria-selected="false">Access Control</button>
+      </div>
+
+      <div class="inventory-grid">
+
+        <!-- Card 1 -->
+        <article class="inventory-card reveal" data-category="safe">
+          <div class="card-image" role="img" aria-label="Executive Floor Safe">
+            🔐
+            <span class="card-badge">In Stock</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Safes</p>
+            <h3 class="card-title">Executive Floor Safe</h3>
+            <p class="card-description">
+              UL-rated fire &amp; burglary protection with biometric lock.
+              Ideal for offices and home studies.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">$1,299 <span>/ unit</span></div>
+              <button class="btn-card">Inquire</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="inventory-card reveal" data-category="display">
+          <div class="card-image" role="img" aria-label="Luxury Jewelry Display Case">
+            💎
+            <span class="card-badge">In Stock</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Display Units</p>
+            <h3 class="card-title">Luxury Jewelry Display Case</h3>
+            <p class="card-description">
+              Tempered glass, LED-lit interior, and keyed lock. Perfect for
+              retail jewelers and high-end boutiques.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">$849 <span>/ unit</span></div>
+              <button class="btn-card">Inquire</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="inventory-card reveal" data-category="vault">
+          <div class="card-image" role="img" aria-label="Modular Vault Room">
+            🏛️
+            <span class="card-badge">Custom Order</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Vault Rooms</p>
+            <h3 class="card-title">Modular Vault Room</h3>
+            <p class="card-description">
+              Fully configurable walk-in vault room with reinforced steel
+              panels, multi-point locking, and climate control options.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">From $12,500</div>
+              <button class="btn-card">Get Quote</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="inventory-card reveal" data-category="access">
+          <div class="card-image" role="img" aria-label="Smart Access Control Panel">
+            📲
+            <span class="card-badge">New</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Access Control</p>
+            <h3 class="card-title">Smart Access Panel</h3>
+            <p class="card-description">
+              Touchscreen keypad with mobile app integration, PIN, RFID,
+              and fingerprint entry modes. Audit log included.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">$599 <span>/ unit</span></div>
+              <button class="btn-card">Inquire</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="inventory-card reveal" data-category="safe">
+          <div class="card-image" role="img" aria-label="Commercial Drop Safe">
+            💰
+            <span class="card-badge">In Stock</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Safes</p>
+            <h3 class="card-title">Commercial Drop Safe</h3>
+            <p class="card-description">
+              High-capacity cash deposit safe with anti-fishing baffle and
+              dual-user PIN management. Built for retail environments.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">$749 <span>/ unit</span></div>
+              <button class="btn-card">Inquire</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="inventory-card reveal" data-category="display">
+          <div class="card-image" role="img" aria-label="Wall-Mounted Display Cabinet">
+            🖼️
+            <span class="card-badge">In Stock</span>
+          </div>
+          <div class="card-body">
+            <p class="card-category">Display Units</p>
+            <h3 class="card-title">Wall-Mounted Display Cabinet</h3>
+            <p class="card-description">
+              Sleek aluminum-framed cabinet with adjustable shelving and
+              integrated LED strips. Available in multiple finishes.
+            </p>
+            <div class="card-footer">
+              <div class="card-price">$395 <span>/ unit</span></div>
+              <button class="btn-card">Inquire</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.inventory-grid -->
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT US ===================== -->
+  <section id="contact" class="site-section" aria-label="Contact Us">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- Left: info -->
+        <div class="contact-info reveal">
+          <p class="section-eyebrow" style="color:rgba(200,168,75,0.9);">Reach Out</p>
+          <h2 class="section-title">Let's Talk<br>Business</h2>
+          <div class="divider"></div>
+          <p style="color:rgba(255,255,255,0.7); margin-bottom:36px; max-width:420px; line-height:1.7;">
+            Ready to secure your assets or upgrade your retail displays?
+            Our specialists are here to help. Send us a message or give us
+            a call — we respond within one business day.
+          </p>
+
+          <ul class="contact-detail-list" aria-label="Contact details">
+            <li class="contact-detail">
+              <div class="contact-icon" aria-hidden="true">📍</div>
+              <div class="contact-detail-text">
+                <strong>Address</strong>
+                <p>4500 Vault Avenue, Suite 200<br>Chicago, IL 60601</p>
+              </div>
+            </li>
+            <li class="contact-detail">
+              <div class="contact-icon" aria-hidden="true">📞</div>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                <p><a href="tel:+13125550192" style="color:rgba(255,255,255,0.85);">(312) 555-0192</a></p>
+              </div>
+            </li>
+            <li class="contact-detail">
+              <div class="contact-icon" aria-hidden="true">✉️</div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <p><a href="mailto:info@vaultretailgroup.com" style="color:rgba(255,255,255,0.85);">info@vaultretailgroup.com</a></p>
+              </div>
+            </li>
+            <li class="contact-detail">
+              <div class="contact-icon" aria-hidden="true">🕘</div>
+              <div class="contact-detail-text">
+                <strong>Hours</strong>
+                <p>Mon – Fri: 8 AM – 6 PM CT<br>Sat: 9 AM – 2 PM CT</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="social-links" aria-label="Social media links">
+            <a class="social-link" href="#" aria-label="LinkedIn">in</a>
+            <a class="social-link" href="#" aria-label="Twitter / X">𝕏</a>
+            <a class="social-link" href="#" aria-label="Facebook">f</a>
+            <a class="social-link" href="#" aria-label="Instagram">▣</a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-card reveal">
+          <h3 class="form-title">Send Us a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel" />
+            </div>
+
+            <div class="form-group">
+              <label for="interest">Area of Interest</label>
+              <select id="interest" name="interest">
+                <option value="" disabled selected>Select a product category…</option>
+                <option value="safes">Safes</option>
+                <option value="display">Display Units</option>
+                <option value="vault">Vault Rooms</option>
+                <option value="access">Access Control</option>
+                <option value="other">Other / General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project or question…" required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send Message</button>
+          </form>
+
+          <div class="form-success" id="form-success" role="alert">
+            ✅ Your message has been sent! We'll be in touch within one business day.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Vault Retail Group. All rights reserved.
+      &nbsp;|&nbsp; Designed with care for the modern enterprise.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
