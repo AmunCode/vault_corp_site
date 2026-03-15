@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <div class="submark-ring">
+      <span class="brand-mark" aria-hidden="true"></span>
+    </div>
+    <h1 class="display-4 fw-bold">Inventory Available</h1>
+    <p class="lead mt-3 muted-on-dark">
+      Current categories and examples of the inventory moving through Vault Retail Group.
+    </p>
+  </div>
+</section>
+
+<section class="section-dark content-section">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card inventory-card h-100 shadow-sm border-0">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Women's Apparel</h4>
+          </div>
+          <div class="card-body">
+            <h3>Tops, Denim, Dresses</h3>
+            <p>Mixed sizes and styles prepared for live sales, lots, or individual listings.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card inventory-card featured h-100 shadow-sm border-0">
+          <div class="card-header py-3 text-bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Accessories</h4>
+          </div>
+          <div class="card-body">
+            <h3>Bags, Wallets, Jewelry</h3>
+            <p>High-interest add-ons and compact items that perform well in bundles and fast-moving shows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card inventory-card h-100 shadow-sm border-0">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Bulk / Clearance</h4>
+          </div>
+          <div class="card-body">
+            <h3>Wholesale Opportunities</h3>
+            <p>Larger liquidation lots for quick movement, reseller buyers, or category rotation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light content-section">
+  <div class="container text-center">
+    <h2 class="fw-bold section-title mb-3">Need more details?</h2>
+    <p class="lead text-secondary mb-4">
+      Use the contact page to ask about current stock, incoming lots, or specific categories.
+    </p>
+    <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg px-4">Contact Us</a>
+  </div>
+</section>
+{% endblock %}

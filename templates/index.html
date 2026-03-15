@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="home" class="hero-gradient">
+  <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="brand-panel text-dark rounded-4 shadow p-5 text-center">
+          <div class="submark-ring">
+            <img
+                src="{{ url_for('static', filename='images/vault-monogram-logo-clear.png') }}"
+                alt="Vault Retail Group logo"
+                class="hero-logo"
+            />
+          </div>
+          <h3 class="fw-bold">Hidden-vault of deals on leading brands</h3>
+          <p class="mb-0 text-secondary">
+            We source from wholesale, manufacturing, and liquidation to bring the best deals to market.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold lh-1 mb-3">
+          Vault Retail Group moves curated inventory across the platforms where shoppers already buy.
+        </h1>
+        <p class="lead mb-4">
+          We focus on fashion liquidation, live selling, and resale-ready products for channels like Whatnot, Poshmark, eBay, and beyond.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="{{ url_for('inventory') }}" class="btn btn-light btn-lg px-4 me-md-2">View Inventory</a>
+          <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-preview" class="section-light">
+  <div class="container px-4 py-5">
+    <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-primary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">1</div>
+        <div>
+          <h3 class="fs-4">Fashion liquidation focus</h3>
+          <p>
+            We source and move apparel, accessories, and other retail inventory with speed and flexibility.
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">2</div>
+        <div>
+          <h3 class="fs-4">Built for live selling</h3>
+          <p>
+            Our model supports fast-paced live shows, direct offers, and marketplace-based customer engagement.
+          </p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">3</div>
+        <div>
+          <h3 class="fs-4">Multi-channel ready</h3>
+          <p>
+            The business is structured to support multiple storefronts and seller identities under one parent brand.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="platforms" class="section-soft">
+  <div class="container px-4 py-5 text-center">
+    <h2 class="fw-bold mb-3 section-title">Where we sell</h2>
+    <p class="lead text-secondary mb-5">
+      Vault Retail Group is designed for the new retail stack: live streams, social marketplaces, and direct ecommerce.
+    </p>
+    <div class="row g-3">
+      <div class="col-lg-3 col-sm-6"><div class="platform-badge">Whatnot</div></div>
+      <div class="col-lg-3 col-sm-6"><div class="platform-badge">Poshmark</div></div>
+      <div class="col-lg-3 col-sm-6"><div class="platform-badge">eBay</div></div>
+      <div class="col-lg-3 col-sm-6"><div class="platform-badge">Future Storefront</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="inventory-preview" class="section-dark">
+  <div class="container px-4 py-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold section-title">Inventory categories</h2>
+      <p class="lead text-secondary">
+        A simple homepage preview of the kinds of products and lots currently moving through the business.
+      </p>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center g-4">
+      <div class="col">
+        <div class="card inventory-card h-100 shadow-sm border-0">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Women's Apparel</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Mixed Lots</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Tops and blouses</li>
+              <li>Denim and bottoms</li>
+              <li>Dress assortments</li>
+            </ul>
+            <a href="{{ url_for('inventory') }}" class="w-100 btn btn-lg btn-outline-dark">View page</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card inventory-card featured h-100 shadow-sm border-0">
+          <div class="card-header py-3 text-bg-dark border-dark">
+            <h4 class="my-0 fw-normal">Accessories</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">High-interest Items</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Handbags and wallets</li>
+              <li>Jewelry and add-ons</li>
+              <li>Impulse-buy bundles</li>
+            </ul>
+            <a href="{{ url_for('inventory') }}" class="w-100 btn btn-dark btn-lg">Browse more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card inventory-card h-100 shadow-sm border-0">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Wholesale / Clearance</h4>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Bulk Opportunities</h3>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Large liquidation lots</li>
+              <li>Rotating category stock</li>
+              <li>B2B resale options</li>
+            </ul>
+            <a href="{{ url_for('contact') }}" class="w-100 btn btn-lg btn-outline-dark">Get details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact-preview" class="footer-gradient">
+  <div class="container px-4 py-5 text-center">
+    <h2 class="fw-bold section-title">Let’s talk inventory, sourcing, or partnership opportunities.</h2>
+    <p class="lead mt-3 mb-4 muted-on-dark">
+      Use the contact page for inquiries, partnerships, or reseller opportunities.
+    </p>
+    <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg px-4">Contact Vault Retail Group</a>
+  </div>
+</section>
+{% endblock %}

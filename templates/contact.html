@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-hero">
+  <div class="container text-center">
+    <div class="submark-ring">
+      <span class="brand-mark" aria-hidden="true"></span>
+    </div>
+    <h1 class="display-4 fw-bold">Contact Us</h1>
+    <p class="lead mt-3 muted-on-dark">
+      Reach out for inventory inquiries, partnerships, sourcing, or general business questions.
+    </p>
+  </div>
+</section>
+
+<section class="section-light content-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card contact-card shadow-sm border-0">
+          <div class="card-body p-4 p-md-5">
+            <h2 class="fw-bold mb-3">Get in touch</h2>
+            <p><strong>Email:</strong> hello@vaultretailgroup.com</p>
+            <p><strong>Platforms:</strong> Whatnot, Poshmark, eBay</p>
+            <p class="mb-4">
+              This is a starter contact page. Next step would be adding a working form or inbox integration.
+            </p>
+
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-control" placeholder="Your name" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="you@example.com" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label">Message</label>
+                  <textarea class="form-control" rows="5" placeholder="Tell us what you need"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary btn-lg px-4">Send Message</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
